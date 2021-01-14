@@ -10,7 +10,7 @@ from loader import FriendsDataset
 
 # load data, model, functions
 
-load = torch.load('result/train', torch.device('cpu'))
+load = torch.load('result/train.pt', torch.device('cpu'))
 transformer_state_dict = load['transformer_state_dict']
 transformer_kwargs = load['transformer_kwargs']
 emb = load['emb']
